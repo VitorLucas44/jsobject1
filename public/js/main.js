@@ -1,10 +1,11 @@
 let Francois = {
     nom: 'Francois',
-    panier: ['huile', 'tomate', 'pain']
-  };
-  
+    panier: ['huile', 'tomate']
+};
+
 let Sergio = {
     nom: 'Sergio',
-    panier: ['pomme', 'banane', 'oeufs']
-  };
-  
+    panier: ['pomme', 'banane']
+};
+
+Array.prototype.push.apply(Francois, Sergio);
